@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School</title>
+</head>
+<body bgcolor="peachpuff"><b><font size="11" color="plum">Enter Your Details Please</font></b><br><br>
+    <form action="register" method="post">
+        {% csrf_token %}
+
+   Enter your Name: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <input type="text" name="username"><br><br>
+       Enter Your DOB:  &emsp;&emsp;  &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<input type="date" name="dob"><br><br>
+  Enter Your Age &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <input type="number" name="age"><br><br>
+      <legend>Choose your gender:</legend>
+        &emsp;&emsp;  &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;  &emsp;&nbsp;&emsp;&emsp;&emsp;<label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+       &emsp;&emsp; <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+<br><br>
+          Enter Your Phone Number &emsp;&emsp;&emsp;&nbsp;<input type="tel" name="phnumb"><br><br>
+ Enter Your E-mail &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <input type="email" name="email"><br><br>
+ Enter Your Address &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="text" name="address"><br><br>
+        </e><label for="dept">Choose a Department:&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+  <select id="dept" name="dp">
+    <option value="biology">&emsp;&emsp;Biology Science</option>
+    <option value="computer">Computer Science</option>
+    <option value="humanities">Humanities</option>
+    <option value="commerce">Commerce</option>
+          <option value="agriculture">Agriculture</option>
+  </select>
+<br><br>
+<label for="dept">Purpose:&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;</label>
+  &emsp; &emsp;  &emsp; &emsp;<select id="pose" name="ps">
+    <option value="biology">Enquiry</option>
+    <option value="computer">Place Order</option>
+    <option value="humanities">Return</option>
+    <option value="commerce">Contact</option>
+  </select><br><br>
+        Materials Provide: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="checkbox" id="mtl1" name="mtl1" value="book">
+  <label for="mtl1"> Notebook </label><br>
+&nbsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<input type="checkbox" id="mtl2" name="mtl2" value="pen">
+   <label for="mtl2"> Pen</label><br>
+ &emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="mtl3" name="mtl3" value="paper">
+   <label for="mtl2"> Exam Papers</label><br><br>
+<br><br><br>
+<!--        <input type="text" name="username" placeholder="Enter Your Username"><br><br><br>-->
+<!--        <input type="date" name="dob" placeholder="Enter Your Date Of Birth"><br><br><br>-->
+<!--        <input type="number" name="age" placeholder="Enter Your Age"><br><br><br>-->
+<!--        <input type="radio" name="gender" placeholder="Enter Your Gender"><br><br><br>-->
+<!--        <input type="tel" name="phnumb" placeholder="Enter Your Phone Number"><br><br><br>-->
+<!--        <input type="email" name="email" placeholder="Enter Your Email"><br><br><br>-->
+<!--        <input type="text" name="address" placeholder="Enter Your Address"><br><br><br>-->
+
+ <button><a href="order">Submit</a>	</button>		&emsp; &emsp;&emsp;&emsp;	&emsp;&nbsp;	<button><a href="logout">logout</a></button>
+    </form>
+   </body>
+</html>
